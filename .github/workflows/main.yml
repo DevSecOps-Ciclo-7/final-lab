@@ -1,0 +1,22 @@
+name: proyecto-yesi-lab
+ 
+on:
+ 
+  push:
+    workflow_dispatch:
+ 
+jobs:
+ 
+  build:
+   
+    runs-on: ubuntu-latest
+ 
+    steps:
+ 
+      - name: Descarga repositorio
+        uses: actions/checkout@v3
+ 
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
