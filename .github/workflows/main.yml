@@ -44,6 +44,10 @@ jobs:
       - name: Build Docker
         run: |
           docker build --tag curso-devsecops/final-lab-1:latest .
+
+      - name: Push Docker
+        run: | 
+          docker push curso-devsecops/final-lab-1
  
 
    
