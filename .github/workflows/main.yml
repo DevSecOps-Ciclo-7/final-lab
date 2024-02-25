@@ -43,11 +43,11 @@ jobs:
          
       - name: Build Docker
         run: |
-          docker build --tag curso-devsecops/final-lab-1:latest .
+          docker build --tag yesibeth/curso-devsecops:latest .
 
       - name: Push Docker
         run: | 
-          docker push curso-devsecops/final-lab-1
+          docker push yesibeth/curso-devsecops:latest
  
 
    
