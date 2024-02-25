@@ -34,7 +34,6 @@ jobs:
            name: Depcheck report
            path: ${{github.workspace}}/reports
 
-[0:24] CHRISTOFER LEONELLO VARGAS MARTINEZ
 name: proyecto-yesi-lab
  
 on:
