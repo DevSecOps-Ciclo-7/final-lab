@@ -43,7 +43,7 @@ jobs:
          
       - name: Build Docker
         run: |
-          docker build --tag Curso-Devsecops/final-lab-1:latest .
+          docker build --tag curso-devsecops/final-lab-1:latest .
  
 
    
