@@ -45,6 +45,13 @@ jobs:
         run: |
           docker build --tag yesibeth/curso-devsecops:latest .
 
+      - name: Execute Trivy
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'yesibeth/curso-devsecops:latest'
+          format: 'table'
+          #exit-code: 1
+
       - name: Push Docker
         run: | 
           docker push yesibeth/curso-devsecops:latest
