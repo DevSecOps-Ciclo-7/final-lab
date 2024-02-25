@@ -5,7 +5,7 @@ on:
         Push:
         workflow_dispatch:
 
-jobs
+jobs:
 
   build:
 
