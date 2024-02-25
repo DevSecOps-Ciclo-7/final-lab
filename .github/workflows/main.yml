@@ -69,6 +69,15 @@ jobs:
          run: |
            docker run -p 8000:8000 --name curso-devsecops -d yesibeth/curso-devsecops:latest
 
+       - name: Sleep
+         run: | 
+          timeout /t 30
+
+       - name: OWASP ZAP Scan
+         uses: zaproxy/action-baseline@v0.11.0
+         with:
+           target: 'http://localhost:8000/'
+
    
  
  
