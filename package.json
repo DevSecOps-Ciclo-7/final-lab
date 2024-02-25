@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npm run serve",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "serve": "vite --port 8000"
   },
