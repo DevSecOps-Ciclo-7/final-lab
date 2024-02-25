@@ -71,7 +71,7 @@ jobs:
 
        - name: Sleep
          run: | 
-          timeout /t 30
+          Start-Sleep -Seconds 30
 
        - name: OWASP ZAP Scan
          uses: zaproxy/action-baseline@v0.11.0
