@@ -55,7 +55,19 @@ jobs:
       - name: Push Docker
         run: | 
           docker push yesibeth/curso-devsecops:latest
- 
+          
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    
+    steps:
+       - name: Pull de la Imagen Docker
+         run: |
+          docker pull yesibeth/curso-devsecops:latest
+
+       - name: Despliegue Aplicaion
+         run: |
+           docker run -p 8000:8000 --name curso-devsecops -d yesibeth/curso-devsecops:latest
 
    
  
