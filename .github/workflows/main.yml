@@ -67,7 +67,7 @@ jobs:
 
        - name: Despliegue Aplicaion
          run: |
-           docker run -p 8000:8000 --name curso-devsecops -d yesibeth/curso-devsecops:latest
+           docker run -p 80:80 --name curso-devsecops -d yesibeth/curso-devsecops:latest
 
        - name: Sleep
          run: | 
@@ -76,7 +76,7 @@ jobs:
        - name: OWASP ZAP Scan
          uses: zaproxy/action-baseline@v0.11.0
          with:
-           target: 'http://localhost:8000/'
+           target: 'http://localhost:80/'
 
    
  
