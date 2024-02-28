@@ -43,7 +43,7 @@ jobs:
          
       - name: Build Docker
         run: |
-          docker build --tag yesibeth/curso-devsecops:latest .
+          docker build --tag yesibeth/curso-devsecops:latest . #Docker
 
       - name: Execute Trivy
         uses: aquasecurity/trivy-action@master
