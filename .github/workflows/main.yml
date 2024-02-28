@@ -65,7 +65,7 @@ jobs:
          run: |
           docker pull yesibeth/curso-devsecops:latest
 
-       - name: Despliegue Aplicaion
+       - name: Despliegue de Aplicación docker
          run: |
            docker run -p 80:80 --name curso-devsecops -d yesibeth/curso-devsecops:latest
 
