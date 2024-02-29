@@ -1,9 +1,9 @@
-name: proyecto-yesi-lab1 #Prpyecto final_
+name: proyecto-yesi-lab1 #Proyecto final_
  
 on:
  
   push:
-    workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   contents: write
